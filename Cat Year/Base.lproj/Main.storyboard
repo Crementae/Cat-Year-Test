@@ -1,25 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cat_Year" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPF-ku-ZWy">
+                                <rect key="frame" x="151" y="74" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your cat's age in years." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asx-fs-Jtp">
+                                <rect key="frame" x="77" y="133" width="220" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gBT-P0-Gkd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coS-69-xEV" userLabel="Enter">
+                                <rect key="frame" x="155" y="257" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="697-bE-gQA"/>
+                                    <constraint firstAttribute="height" constant="30" id="w7F-ul-spb"/>
+                                </constraints>
+                                <state key="normal" title="Find age"/>
+                                <connections>
+                                    <action selector="FindAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dug-w4-Og8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAj-cj-1iS">
+                                <rect key="frame" x="0.0" y="337" width="375" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cutecat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Lfi-o9-9aA">
+                                <rect key="frame" x="0.0" y="409" width="375" height="258"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="258" id="kju-yK-QyU"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T8v-MU-HGN">
+                                <rect key="frame" x="139" y="184" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="5hi-d4-BtS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lfi-o9-9aA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0dI-06-8Yl"/>
+                            <constraint firstItem="T8v-MU-HGN" firstAttribute="centerX" secondItem="Asx-fs-Jtp" secondAttribute="centerX" id="1pa-GK-l3q"/>
+                            <constraint firstItem="Asx-fs-Jtp" firstAttribute="top" secondItem="RPF-ku-ZWy" secondAttribute="bottom" constant="38" id="6Ch-7t-7Kf"/>
+                            <constraint firstItem="kAj-cj-1iS" firstAttribute="top" secondItem="coS-69-xEV" secondAttribute="bottom" constant="50" id="7oQ-Fa-bAC"/>
+                            <constraint firstItem="Lfi-o9-9aA" firstAttribute="trailing" secondItem="kAj-cj-1iS" secondAttribute="trailing" id="8cV-Dl-8Hs"/>
+                            <constraint firstItem="Lfi-o9-9aA" firstAttribute="centerX" secondItem="Asx-fs-Jtp" secondAttribute="centerX" id="DiS-qg-t67"/>
+                            <constraint firstItem="Lfi-o9-9aA" firstAttribute="leading" secondItem="kAj-cj-1iS" secondAttribute="leading" id="HkB-Ag-o1Z"/>
+                            <constraint firstAttribute="trailing" secondItem="Lfi-o9-9aA" secondAttribute="trailing" id="NAG-V8-RxM"/>
+                            <constraint firstItem="coS-69-xEV" firstAttribute="top" secondItem="T8v-MU-HGN" secondAttribute="bottom" constant="43" id="Q1a-MZ-hK2"/>
+                            <constraint firstItem="Lfi-o9-9aA" firstAttribute="centerX" secondItem="coS-69-xEV" secondAttribute="centerX" id="Top-8l-wgU"/>
+                            <constraint firstItem="Lfi-o9-9aA" firstAttribute="centerX" secondItem="RPF-ku-ZWy" secondAttribute="centerX" id="XVa-G2-h6h"/>
+                            <constraint firstItem="T8v-MU-HGN" firstAttribute="top" secondItem="Asx-fs-Jtp" secondAttribute="bottom" constant="30" id="Xdt-56-Vpr"/>
+                            <constraint firstItem="Lfi-o9-9aA" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="l7o-8z-NBB"/>
+                            <constraint firstItem="coS-69-xEV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="257" id="uBg-Cb-EVb"/>
+                            <constraint firstItem="Lfi-o9-9aA" firstAttribute="top" secondItem="kAj-cj-1iS" secondAttribute="bottom" constant="21" id="v7O-W5-BuK"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Age" destination="T8v-MU-HGN" id="irQ-bm-g0q"/>
+                        <outlet property="ans" destination="kAj-cj-1iS" id="ieQ-i4-oWY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="356.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cutecat.jpg" width="400" height="300"/>
+    </resources>
 </document>

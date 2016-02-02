@@ -14,6 +14,7 @@
 		AC15C0CF1C552AF8001260E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC15C0CD1C552AF8001260E4 /* LaunchScreen.storyboard */; };
 		AC15C0DA1C552AF8001260E4 /* Cat_YearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15C0D91C552AF8001260E4 /* Cat_YearTests.swift */; };
 		AC15C0E51C552AF8001260E4 /* Cat_YearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15C0E41C552AF8001260E4 /* Cat_YearUITests.swift */; };
+		AC15C0F31C552CA3001260E4 /* cutecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC15C0F21C552CA3001260E4 /* cutecat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AC15C0E01C552AF8001260E4 /* Cat YearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cat YearUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC15C0E41C552AF8001260E4 /* Cat_YearUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_YearUITests.swift; sourceTree = "<group>"; };
 		AC15C0E61C552AF8001260E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC15C0F21C552CA3001260E4 /* cutecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cutecat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				AC15C0CB1C552AF8001260E4 /* Assets.xcassets */,
 				AC15C0CD1C552AF8001260E4 /* LaunchScreen.storyboard */,
 				AC15C0D01C552AF8001260E4 /* Info.plist */,
+				AC15C0F21C552CA3001260E4 /* cutecat.jpg */,
 			);
 			path = "Cat Year";
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					AC15C0C01C552AF8001260E4 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 24BPV7MJFM;
 					};
 					AC15C0D41C552AF8001260E4 = {
 						CreatedOnToolsVersion = 7.2;
@@ -232,6 +236,7 @@
 				AC15C0CF1C552AF8001260E4 /* LaunchScreen.storyboard in Resources */,
 				AC15C0CC1C552AF8001260E4 /* Assets.xcassets in Resources */,
 				AC15C0CA1C552AF8001260E4 /* Main.storyboard in Resources */,
+				AC15C0F31C552CA3001260E4 /* cutecat.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Cat Year/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adisorn.Cat-Year";
@@ -408,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Cat Year/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adisorn.Cat-Year";
